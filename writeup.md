@@ -12,7 +12,9 @@ The first steps of the pipeline are basically the methods introduced in class:
 * detect edges using canny edge detection
 * limit search space to a region of interes
 * use hough transformation to detect lines
+
 Given the lines found we try to identify two groups of lines which represent the left and the right lane using the following steps:
+
 * initialize lane groups with those found in last frame (halve their count)
 * for every line, check if it matches to an already added lane group, by:
 ** computing line parameters m, b
